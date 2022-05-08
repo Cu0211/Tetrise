@@ -17,6 +17,9 @@ public class StartMenu extends JFrame{
 	static Statement stmt = null;
 	static ResultSet rs = null;
 	
+	String user_id = null;
+	String user_name = null;
+	
 	public StartMenu() {
 		setTitle("Tetris");
 		
@@ -25,11 +28,32 @@ public class StartMenu extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
 		
+		System.out.println(MainWindow.userGrade);
+		System.out.println(MainWindow.userClass);
+		System.out.println(MainWindow.userNumber);
+		
+		JLabel userName = new JLabel(MainWindow.userName);
+		userName.setBounds(270, 0, 200, 50);
+		getContentPane().add(userName);
+		
 		setVisible(true);
 	}
-	public static void main(String[] args) {
+	
+	//public void getUserInfo() {
+		//rs = stmt.executeQuery("exec member_sign_in @user_grade=N'" + userGrade + "', @user_class=N'" + userClass + "', @user_number=N'" + userNumber + "', @user_name='" + userName + "'");
+		//rs.next();
+		
+		//user_id = rs.getString("user_id");
+		//user_id = rs.getString("user_name");
+		
+				
+	//}
+	
+	public static void main(String[] args) throws ClassNotFoundException {
 		// TODO Auto-generated method stub
+		
 		new StartMenu();
+				
 	}
 
 }

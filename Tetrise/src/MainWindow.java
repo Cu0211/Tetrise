@@ -17,11 +17,11 @@ public class MainWindow extends JFrame{
 	static Statement stmt = null;
 	static ResultSet rs = null;
 		
-	String userGrade = null;
-	String userClass = null;
-	String userNumber = null;
-	String userName = null;
-	String rst  = null;
+	static String userGrade = null;
+	static String userClass = null;
+	static String userNumber = null;
+	static String userName = null;
+	static String rst  = null;
 	
 	public MainWindow(){
 		setTitle("Tetris");
