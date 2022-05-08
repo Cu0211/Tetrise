@@ -24,7 +24,7 @@ public class MainWindow extends JFrame{
 	String rst  = null;
 	
 	public MainWindow(){
-		setTitle("Tetrise");
+		setTitle("Tetris");
 		setSize(350, 600);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -97,7 +97,9 @@ public class MainWindow extends JFrame{
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-								
+				
+				new StartMenu();
+				setVisible(false);
 			}
 		});
 		
